@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:prod": "webpack --config=config/webpack.config.js; cp src/index.json dist/index.json; cp manifest.json dist/manifest.json; cp src/index.css dist/index.css",
     "build:dev": "webpack --config=config/webpack.config.dev.js; cp src/index.json dev/index.json; cp ./manifest.dev.json dev/manifest.json; cp src/index.css dev/index.css",
-    "deploy:prod": "npm run build:prod; gsutil cp -m public-read dist/* gs://reversed_sequence_sunburst",
+    "deploy:prod": "npm run build:prod; gsutil cp -a public-read dist/* gs://reversed_sequence_sunburst",
     "deploy:dev": "npm run build:dev; gsutil cp -a public-read dev/* gs://reversed_sequence_sunburst/dev"
   },
   "keywords": [],

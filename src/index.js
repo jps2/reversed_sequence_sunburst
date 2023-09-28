@@ -478,7 +478,7 @@ function drawText(params) {
     .attr("font-size", params.fontsize)
     .text(params.text)
     .attr('x', (rect_base + margin.left) / 2)
-    .attr('y', (rect_base + margin.top) / params.y_corr)
+    .attr('y', (rect_base + margin.top) / params.y_corr)  
 }
 
 /*
