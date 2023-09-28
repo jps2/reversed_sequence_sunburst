@@ -1,0 +1,22 @@
+{
+  "name": "<NAME>",
+  "logoUrl": "http://url",
+  "organization": "Jyri Sihvo, reaktor.com",
+  "supportUrl": "https://support_url",
+  "packageUrl": "https://package_url",
+  "description": "<DESCRIPTION>",
+  "devMode": true,
+  "components": [
+    {
+      "name": "<NAME>",
+      "description": "<DESCRIPTION>",
+      "iconUrl": "https://url",
+      "devMode": true,
+      "resource": {
+          "js": "gs://reversed_sequence_sunburst/index.js",
+          "config": "gs://reversed_sequence_sunburst/index.json",
+          "css": "gs://reversed_sequence_sunburst/index.css"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+#chart {
+  float: left;
+}
+
+#left_sidebar {
+  float: left;
+}
+
+#legend {
+  float: left;
+}
+  
+#sequence text, #legend text {
+  font-weight: 400;
+  fill: #fff;
+}
+
+#chart path {
+  stroke: #fff;
+}

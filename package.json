@@ -1,0 +1,26 @@
+{
+  "name": "reversed_sequence_sunburst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "webpack --config=config/webpack.config.js; cp src/index.json dist/index.json; cp manifest.json dist/manifest.json; cp src/index.css dist/index.css",
+    "build:dev": "webpack --config=config/webpack.config.dev.js; cp src/index.json dev/index.json; cp ./manifest.dev.json dev/manifest.json; cp src/index.css dev/index.css",
+    "deploy:prod": "npm run build:prod; gsutil cp -m public-read dist/* gs://reversed_sequence_sunburst",
+    "deploy:dev": "npm run build:dev; gsutil cp -a public-read dev/* gs://reversed_sequence_sunburst/dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/dscc": "^0.3.22",
+    "clean-webpack-plugin": "^4.0.0",
+    "d3": "^7.8.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

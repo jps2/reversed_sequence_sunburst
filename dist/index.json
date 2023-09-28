@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "id": "concepts",
+      "label": "Path sequence sunburst-viz",
+      "elements": [
+        {
+          "id": "sequences",
+          "label": "Path sequence",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max":1,
+            "supportedTypes": ["DEFAULT"]
+          }
+        },
+        {
+          "id": "goals",
+          "label": "Goals",
+          "type": "METRIC",
+          "options": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "explanation",
+      "label": "Explanation box (inside circle)",
+      "elements":[
+        {
+          "id": "base_font",
+          "label": "Font family",
+          "defaultValue": "Open Sans",
+          "type": "FONT_FAMILY"
+        },
+        {
+          "id": "base_font_size",
+          "label": "Font size",
+          "type": "FONT_SIZE",
+          "defaultValue": "12"
+        },
+        {
+          "id": "base_font_color",
+          "label": "Font color",
+          "type": "FONT_COLOR"
+        }        
+
+      ]
+    },
+    {
+      "id": "labels",
+      "label": "Breadcrumbs",
+      "elements":[
+        {
+          "id": "bc_font_size",
+          "label": "Breadcrumb label  font size",
+          "type": "FONT_SIZE",
+          "defaultValue": "12"
+        },
+        {
+          "id": "bc_font_color",
+          "label": "Breadcrumb label color",
+          "type": "FONT_COLOR"
+        },
+        {
+          "id": "hide_endpoint",
+          "label": "Hide the end point arc",
+          "type": "CHECKBOX",
+          "defaultValue": "false"
+        }      
+      ]
+    },
+    {
+      "id": "snbrst_colors",
+      "label": "Colorscheme for sequences",
+      "elements": [
+        {
+          "id": "color_scheme",
+          "label": "Predefined color_scheme",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "schemeSet1",
+          "options": [
+            {
+              "label": "d3.schemeSet1",
+              "value": "schemeSet1"
+            },
+            {
+              "label": "d3.schemeAccent",
+              "value": "schemeAccent"
+            },
+            {
+              "label": "d3.schemeDark2",
+              "value": "schemeDark2"
+            },
+            {
+              "label": "d3.schemePaired",
+              "value": "schemePaired"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
